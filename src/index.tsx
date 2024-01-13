@@ -3,8 +3,9 @@ import GeeTest from './GeeTest';
 import type { GeeTestValidateParams } from './Server';
 import { generateSignToken, validateCaptcha } from './Server';
 import type { GeeTestEventCallbacks, GeeTestRef, GeeTestValidateResult } from './interface';
+import { useGeeTest } from './hooks/useGeeTest';
 
-export { validateCaptcha, generateSignToken };
+export { validateCaptcha, generateSignToken, useGeeTest };
 export type {
   GeeTestProps,
   GeeTestValidateParams,
